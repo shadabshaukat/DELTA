@@ -74,13 +74,14 @@ The function 'measure_latency_oracle' uses the oracledb package to connect to th
 
 ```
 Docker 
+Python3.9 (local install)
 ```
 
 # Installation
 
-You can install and run DELTA as a Docker container
+You can install and run DELTA as a Docker container or run with Python directly if installed locally (See 'Function Definition' section in the end)
 
-Build from source
+## Building from source
 
 ```
 git clone https://github.com/shadabshaukat/DELTA.git && cd DELTA/
