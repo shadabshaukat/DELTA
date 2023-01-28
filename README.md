@@ -81,7 +81,7 @@ Python3.9 (local install)
 
 You can install and run DELTA as a Docker container or run with Python directly if installed locally (See 'Function Definition' section in the end)
 
-## Building from source
+### Build from source
 
 ```
 git clone https://github.com/shadabshaukat/DELTA.git && cd DELTA/
