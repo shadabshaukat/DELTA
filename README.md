@@ -236,7 +236,9 @@ Please refer to the below links for more details to get better performance out o
 ## Local Install of Python Packages
 
 ```
- pip3 install -r requirements.txt
+git clone https://github.com/shadabshaukat/DELTA.git && cd DELTA/
+
+pip3 install -r requirements.txt
  ```
 
 ## measure_latency_oracle(user,password,dsn,num_requests,query)
