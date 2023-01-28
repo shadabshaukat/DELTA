@@ -23,11 +23,14 @@ The tool uses the oracledb, psycopg2 and pymysql packages to connect to the resp
 ## How it works
 The function 'measure_latency_oracle' uses the oracledb package to connect to the Oracle database and execute a single query per request. The function uses the time module to measure the time it takes to execute the query, fetch the results, and close the connection. The function then calculates the latency of each request and the average latency of all requests. The function opens a new connection for every request and closes it after fetching the results, which will measure the time it takes to execute the query, transfer the data over the network, and close the connection. The query parameter is passed to the function, allowing you to test the performance of the database with different queries. The same logic applies to the functions of mysql and postgres
 
-🔌 Databases Supported :
-
-![image](https://user-images.githubusercontent.com/39692236/215261248-336bcc14-8e45-409e-abb2-b71cdff490f2.png)
 
 
+![image](https://user-images.githubusercontent.com/39692236/215262077-7ccb1c3e-0638-4542-95e3-67f47f880dd9.png)
+
+
+ 🔌 Databases Supported :
+
+ 
  📌 Oracle : 
 
 - Amazon RDS Oracle
