@@ -90,6 +90,14 @@ docker build -t delta . --tag delta  --pull --no-cache --force-rm
 
 ```
 
+## OR
+
+### Pull Latest Image from Docker Hub Registry
+
+```
+docker pull 9382382888/delta:latest
+```
+
 # Usage
 
 The tool can be run using the command line. You will need to provide the following arguments:
