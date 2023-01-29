@@ -96,6 +96,11 @@ docker build -t delta . --tag delta  --pull --no-cache --force-rm
 
 ```
 docker pull 9382382888/delta:latest
+
+docker run -it 9382382888/delta:latest python3 main.py \
+url \
+10 \
+https://www.google.com
 ```
 
 # Usage
