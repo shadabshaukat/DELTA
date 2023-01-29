@@ -95,9 +95,9 @@ docker build -t delta . --tag delta  --pull --no-cache --force-rm
 ### Pull Latest Image from Docker Hub Registry (docker.io)
 
 ```
-docker pull 9382382888/delta:latest
+docker pull shadabshaukat/delta:latest
 
-docker run -it 9382382888/delta:latest python3 main.py \
+docker run -it shadabshaukat/delta:latest python3 main.py \
 url \
 10 \
 https://www.google.com
