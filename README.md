@@ -92,7 +92,7 @@ docker build -t delta . --tag delta  --pull --no-cache --force-rm
 
 ## OR
 
-### Pull Latest Image from Docker Hub Registry (docker.io)
+### Download Latest Image from Docker Hub Registry (docker.io)
 
 ```
 docker pull shadabshaukat/delta:latest
