@@ -139,8 +139,6 @@ YourP@ssw0rd  \
  
  ## Oracle Database Latency Check using OCIping()
 
-#### Note : This option uses the Oracle Python driver in thick mode and can only be used for Non-Autonomous Oracle Database. It does not require a SQL query but sends multiple requests using connection.ping() method
-
 
 ```
  docker run -it delta python3 main.py \
@@ -151,11 +149,12 @@ YourP@ssw0rd  \
  'host:port/servicename' 
  ```
  
-This function uses ping() [1] in python-oracledb thick mode which is a wrapper around OCIPing() function [2] 
+#### Note :
+This dbtype function uses the Oracle Python driver in thick mode and can only be used for testing latency to non-Autonomous Oracle Databases. It sends multiple requests using connection.ping() method of python-oracledb package. The 'ociping' dbtype function uses ping()* in python-oracledb thick mode which is a wrapper around OCIPing() function**
 
-[1] https://python-oracledb.readthedocs.io/en/latest/api_manual/connection.html#Connection.ping
+*[1] https://python-oracledb.readthedocs.io/en/latest/api_manual/connection.html#Connection.ping
 
-[2] https://docs.oracle.com/en/database/oracle/oracle-database/19/lnoci/miscellaneous-functions.html#GUID-033BF96D-D88D-4F18-909A-3AB7C2F6C70F
+**[2] https://docs.oracle.com/en/database/oracle/oracle-database/19/lnoci/miscellaneous-functions.html#GUID-033BF96D-D88D-4F18-909A-3AB7C2F6C70F
 
 
 ## Postgres Latency Check
